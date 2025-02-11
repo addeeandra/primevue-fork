@@ -19,6 +19,7 @@ import DynamicDoc from '@/doc/tabs/DynamicDoc.vue';
 import ImportDoc from '@/doc/tabs/ImportDoc.vue';
 import ScrollableDoc from '@/doc/tabs/ScrollableDoc.vue';
 import TabMenuDoc from '@/doc/tabs/TabMenuDoc.vue';
+import TabDialogDoc from '@/doc/tabs/TabDialogDoc.vue';
 import TemplateDoc from '@/doc/tabs/TemplateDoc.vue';
 import PTComponent from '@/doc/tabs/pt/index.vue';
 import ThemingDoc from '@/doc/tabs/theming/index.vue';
@@ -66,6 +67,11 @@ export default {
                     id: 'tabmenu',
                     label: 'Tab Menu',
                     component: TabMenuDoc
+                },
+                {
+                    id: 'tabdialog',
+                    label: 'Tab in Dialog',
+                    component: TabDialogDoc
                 },
                 {
                     id: 'accessibility',

@@ -66,9 +66,9 @@ export default {
         }
     },
     mounted() {
-        setTimeout(() => {
+        this.$nextTick(() => {
             this.updateInkBar();
-        }, 150);
+        });
 
         if (this.showNavigators) {
             this.updateButtonState();
@@ -76,6 +76,9 @@ export default {
         }
     },
     updated() {
+        this.$nextTick(() => {
+            this.updateInkBar();
+        });
         this.showNavigators && this.updateButtonState();
     },
     beforeUnmount() {
